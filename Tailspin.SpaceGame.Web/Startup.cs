@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿using System;
+=======
+using System;
+>>>>>>> master
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -54,11 +58,17 @@ namespace TailSpin.SpaceGame.Web
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+<<<<<<< HEAD
 
             app.UseRouting();
 
             app.UseAuthorization();
 
+=======
+            app.UseCookiePolicy();
+            app.UseRouting();
+            app.UseAuthorization();
+>>>>>>> master
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
